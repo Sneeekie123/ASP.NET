@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="sv-se">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"content="Smipas start sida">
+    <meta name="keywords"content="HTML, CSS,">
+    <meta name="author"content="Simp">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <script defer src="https://kit.fontawesome.com/433736379d.js"crossorigin="anonymous">
+</script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/site.css">
+    <title>
+</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="/" id="logo">
+                <img src="/Icons/Silicon-Logotype.svg" alt="Silicon-Logotype">
+            </a>
+
+
+            <div id="menu">
+                <nav>
+                    <a class="menu-link" href="#">Overview</a>
+                    <a class="menu-link" href="#">Featuers</a>
+                    <a class="menu-link" href="#">Courses</a>
+                </nav>
+            </div>
+
+
+            <div class="btn-switch">
+                <span>Light</span>
+                <div class="switch">
+                    <input type="checkbox" id="switch" role="switch">
+                    <label for="switch" class="slider round"></label>
+                </div>
+                <span>Dark</span>
+            </div>
+
+            <div class="account-buttons">
+                <button class="btn-gray">Sign in</button>
+                <button class="btn-theme">Sign up</button>
+            </div>
+
+            <div class="btn-mobile">
+                <button class="btn" id="mobile-menu-btn" aria-controls="btn-switch"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+
+        <div  id="mobile-menu"  aria-expanded="false">
+
+            <div class="btn-switch">
+                <span>Light</span>
+                <div class="switch">
+                    <input type="checkbox" id="switch" role="switch">
+                    <label for="switch" class="slider round"></label>
+                </div>
+                <span>Dark</span>
+            </div>
+
+            <div class="account-buttons">
+                <button class="btn-gray">Sign in</button>
+                <button class="btn-theme">Sign up</button>
+            </div>
+
+            
+            <nav>
+                <a class="menu-link" href="#">Overview</a>
+                <a class="menu-link" href="#">Featuers</a>
+                <a class="menu-link" href="/html/Courses.html">Courses</a>
+            </nav>
+            
+
+        </div>
+    </header>
+
+    <section id="courses">
+        <div class="container">
+            <h1 class="my-5">Courses</h1>
+
+            <div class="grid">
+                <div class="course-card">
+                    <div class="course-card__image">
+                        <img src="/Images/curse-image1.png" alt="course image">
+                        <img src="/Icons/flag.png" class="flag" alt="flag">
+                    </div>
+                    <div class="course-card__body">
+                        <h2 class="h5">Fullstack Web Developer Course from Scratch</h2>
+                        <p class="text-s">By Robert Fox</p>
+                        <p class="price">$12.50</p>
+                    </div>
+                    <div class="course-card__footer">
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <p>220 hours</p>
+                            <p>94% (4.2K)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-card__image">
+                        <img src="/Images/course-card1.png" alt="course image">
+                    </div>
+                    <div class="course-card__body">
+                        <h2 class="h5">HTML, CSS, JavaScript Web Developer</h2>
+                        <p class="text-s">By Jenny Wilson & Marvin McKinney</p>
+                        <p class="price">$15.99</p>
+                    </div>
+                    <div class="course-card__footer">
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <p>160 hours</p>
+                            <p>92% (3.1K)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-card__image">
+                        <img src="/Images/course-card1.png" alt="course image">
+                    </div>
+                    <div class="course-card__body">
+                        <h2 class="h5">The Complete Front-End Web Development Course</h2>
+                        <p class="text-s">By Albert Flores</p>
+                        <div class="prices">
+                            <p class="price-discount">$9.99</p>
+                            <p class="price-full" style=text-decoration:line-through;>$44.99</p>
+                        </div>
+                      
+                    </div>
+                    <div class="course-card__footer">
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <p>100 hours</p>
+                            <p>98% (2.7K)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-card__image">
+                        <img src="/Images/course-card1.png" alt="course image">
+                    </div>
+                    <div class="course-card__body">
+                        <h2 class="h5">iOS & Swift - The Complete iOS App Development Course</h2>
+                        <p class="text-s">By Marvin McKinney</p>
+                        <p class="price">$15.99</p>
+                    </div>
+                    <div class="course-card__footer">
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <p>160 hours</p>
+                            <p>92% (3.1K)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-card__image">
+                        <img src="/Images/course-card1.png" alt="course image">
+                    </div>
+                    <div class="course-card__body">
+                        <h2 class="h5">Data Science & Machine Learning with Python</h2>
+                        <p class="text-s">By Esther Howard</p>
+                        <p class="price">$11.20</p>
+                    </div>
+                    <div class="course-card__footer">
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <p>160 hours</p>
+                            <p>92% (3.1K)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-card__image">
+                        <img src="/Images/course-card1.png" alt="course image">
+                    </div>
+                    <div class="course-card__body">
+                        <h2 class="h5">Creative CSS Drawing Course: Make Art With CSS</h2>
+                        <p class="text-s">By Robert Fox</p>
+                        <p class="price">$10.50</p>
+                    </div>
+                    <div class="course-card__footer">
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <p>220 hours</p>
+                            <p>94% (4.2K)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-card__image">
+                        <img src="/Images/course-card1.png" alt="course image">
+                    </div>
+                    <div class="course-card__body">
+                        <h2 class="h5">Blender Character Creator v2.0 for Video Games Design</h2>
+                        <p class="text-s">By Ralph Edwards</p>
+                        <p class="price">$18.99</p>
+                    </div>
+                    <div class="course-card__footer">
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <p>160 hours</p>
+                            <p>92% (3.1K)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-card__image">
+                        <img src="/Images/course-card1.png" alt="course image">
+                    </div>
+                    <div class="course-card__body">
+                        <h2 class="h5">The Ultimate Guide to 2D Mobile Game Development with Unity</h2>
+                        <p class="text-s">By Albert Flores</p>
+                        <div class="prices">
+                            <p class="price-discount">12.99</p>
+                            <p class="price-full" style=text-decoration:line-through;>$44.99</p>
+                        </div>
+                    </div>
+                    <div class="course-card__footer">
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <p>100 hours</p>
+                            <p>98% (2.7K)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-card__image">
+                        <img src="/Images/course-card1.png" alt="course image">
+                    </div>
+                    <div class="course-card__body">
+                        <h2 class="h5">Learn JMETER from Scratch on Live Apps-Performance Testing</h2>
+                        <p class="text-s">By Jenny Wilson</p>
+                        <p class="price">$14.50</p>
+                    </div>
+                    <div class="course-card__footer">
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <p>160 hours</p>
+                            <p>92% (3.1K)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"crossorigin="anonymous"></script>
+    <script src="/scripts/script.js"></script>
+</body>
+</html>

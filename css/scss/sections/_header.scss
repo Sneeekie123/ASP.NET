@@ -1,0 +1,106 @@
+header {
+    padding: 15px 0;
+
+    position: relative;
+
+    .container {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr auto;
+        grid-template-areas:  "logo mobile";
+        gap: 40px;
+        
+        @include lg {
+            grid-template-columns: auto 1fr auto auto;
+            grid-template-areas:  "logo menu switch buttons";
+        }
+
+        span {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        #logo { grid-area: logo; }
+
+        #menu { 
+            grid-area: menu; 
+            display: none;
+
+            @include lg {
+                display: block;
+            }
+            
+            nav {
+                display: flex;
+                gap: 15px;
+            }
+          
+        }
+        
+        .btn-switch { 
+            grid-area: switch; 
+            display: none;
+
+            @include lg {
+                display: block;
+            }
+        }
+
+        .account-buttons { 
+            grid-area: buttons; 
+            display: none;
+            gap: 15px;
+
+            @include lg {
+                display: flex;
+            }
+        }
+
+        .btn-mobile {
+            grid-area: mobile; 
+            display: block;
+
+            @include lg {
+                display: none;
+            }
+            .btn {
+                font-size: 1.4rem;
+            }
+        }
+
+    }
+
+    #mobile-menu {
+        
+        &, nav {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        @include shadow-l;
+        padding: 1rem;
+
+        .account-buttons {
+            display: flex;
+            gap: 2rem;
+        }
+
+        @include lg {
+            display: none;
+        }
+
+        transform: translateX(-100%);
+
+        &[aria-expanded="true"] {
+            transform: translateX(0);
+        }
+        transition: transform 300ms ease-out;
+
+        position: absolute;
+        top: 100%;
+        background-color: #fff;
+        width: 100%;
+    }
+}
