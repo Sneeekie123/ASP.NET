@@ -1,6 +1,9 @@
 #courses {
-
+    
+    
+    
     .grid {
+        
         display: grid;
         gap: 2rem 2rem;
         @include md {
@@ -12,7 +15,69 @@
 
     }
 
+
+    .courses-categories {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom:  0px;
+        padding: 0px;
+
+        #courses {
+            margin-bottom: 40px;
+            margin-top: 10px;
+        }
+       
+
+        .categories-search {
+            display: flex;
+            align-items: center;
+            
+            
+            #categories {
+              height: 40px;
+              width: 200px;
+              padding-left: 10px;
+              border-radius: 5px;
+              color: #7d7878;
+              border-color: #c0b8b8;
+
+              
+              
+            }
+
+
+            .search-container {
+                position: relative;
+                margin-left: 20px;
+                
+            }
+            
+            #search {
+                padding-right: 30px;
+                height: 40px;
+                width: 300px;
+                padding-left: 15px;
+                border-radius: 5px;
+                border: 1px solid #c0b8b8; 
+                outline: none;
+            }
+            
+            .fa-magnifying-glass {
+                position: absolute;
+                top: 50%;
+                right: 15px; 
+                transform: translateY(-50%);
+            }
+
+           
+        }
+     
+    }
+  
+
     .course-card {
+        
+        
         .price {
             color: $theme;
             font-weight: 700;
@@ -20,16 +85,19 @@
 
         .prices {
             display: flex;
+            
         }
 
         .price-discount {
             color: red;
             font-weight: 700;
+            margin-bottom: 0px;
             
         }
 
         .price-full {
             margin-left: 10px;
+            margin-bottom: 0px;
             
         }
 

@@ -79,18 +79,51 @@
 
     <section id="courses">
         <div class="container">
-            <h1 class="my-5">Courses</h1>
+            <div class="courses-categories container">
+                <h1  id="courses">Courses</h1>
+
+                
+                <div class="categories-search">
+                    <div>
+                        <select name="categories" id="categories">
+                            <option value="All categories">All categories</option>
+                            <option value="Html">Html</option>
+                            <option value="Python">Python</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="Unity">Unity</option>
+                        </select>
+                    </div>
+
+                    <div >
+                        <form id="form"> 
+                            <div class="search-container">
+                                <input type="search" id="search" placeholder="Search courses">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+              
+                
+
+              
+            </div>
+          
+              
 
             <div class="grid">
                 <div class="course-card">
                     <div class="course-card__image">
-                        <img src="/Images/curse-image1.png" alt="course image">
-                        <img src="/Icons/flag.png" class="flag" alt="flag">
+                        <p class="best-seller">Best Seller</p>
+                        <img src="/Icons/flag.png"  id="flag" alt="flag">
+                        <img src="/Images/course-image1.png" id="course-image" alt="course image">
                     </div>
                     <div class="course-card__body">
                         <h2 class="h5">Fullstack Web Developer Course from Scratch</h2>
                         <p class="text-s">By Robert Fox</p>
                         <p class="price">$12.50</p>
+                        <hr class="line">
                     </div>
                     <div class="course-card__footer">
                         <div>
@@ -103,12 +136,14 @@
 
                 <div class="course-card">
                     <div class="course-card__image">
-                        <img src="/Images/course-card1.png" alt="course image">
+                        <img src="/Icons/flag.png"  id="flag" alt="flag">
+                        <img src="/Images/course-image2.png" alt="course image">
                     </div>
                     <div class="course-card__body">
-                        <h2 class="h5">HTML, CSS, JavaScript Web Developer</h2>
+                        <h2 class="h5">HTML, CSS, JavaScript Web <br> Developer</h2>
                         <p class="text-s">By Jenny Wilson & Marvin McKinney</p>
                         <p class="price">$15.99</p>
+                        <hr class="line">
                     </div>
                     <div class="course-card__footer">
                         <div>
@@ -121,7 +156,8 @@
 
                 <div class="course-card">
                     <div class="course-card__image">
-                        <img src="/Images/course-card1.png" alt="course image">
+                        <img src="/Icons/flag.png"  id="flag" alt="flag">
+                        <img src="/Images/course-image3.png" alt="course image">
                     </div>
                     <div class="course-card__body">
                         <h2 class="h5">The Complete Front-End Web Development Course</h2>
@@ -129,7 +165,9 @@
                         <div class="prices">
                             <p class="price-discount">$9.99</p>
                             <p class="price-full" style=text-decoration:line-through;>$44.99</p>
+                            
                         </div>
+                        <hr class="line">
                       
                     </div>
                     <div class="course-card__footer">
@@ -143,12 +181,14 @@
 
                 <div class="course-card">
                     <div class="course-card__image">
-                        <img src="/Images/course-card1.png" alt="course image">
+                        <img src="/Icons/flag.png"  id="flag" alt="flag">
+                        <img src="/Images/course-image4.png" alt="course image">
                     </div>
                     <div class="course-card__body">
                         <h2 class="h5">iOS & Swift - The Complete iOS App Development Course</h2>
                         <p class="text-s">By Marvin McKinney</p>
                         <p class="price">$15.99</p>
+                        <hr class="line">
                     </div>
                     <div class="course-card__footer">
                         <div>
@@ -161,12 +201,15 @@
 
                 <div class="course-card">
                     <div class="course-card__image">
-                        <img src="/Images/course-card1.png" alt="course image">
+                        <p class="best-seller">Best Seller</p>
+                        <img src="/Icons/flag.png"  id="flag" alt="flag">
+                        <img src="/Images/course-image5.png" alt="course image">
                     </div>
                     <div class="course-card__body">
                         <h2 class="h5">Data Science & Machine Learning with Python</h2>
                         <p class="text-s">By Esther Howard</p>
                         <p class="price">$11.20</p>
+                        <hr class="line">
                     </div>
                     <div class="course-card__footer">
                         <div>
@@ -179,12 +222,14 @@
 
                 <div class="course-card">
                     <div class="course-card__image">
-                        <img src="/Images/course-card1.png" alt="course image">
+                        <img src="/Icons/flag.png"  id="flag" alt="flag">
+                        <img src="/Images/course-image6.png" alt="course image">
                     </div>
                     <div class="course-card__body">
                         <h2 class="h5">Creative CSS Drawing Course: Make Art With CSS</h2>
                         <p class="text-s">By Robert Fox</p>
                         <p class="price">$10.50</p>
+                        <hr class="line">
                     </div>
                     <div class="course-card__footer">
                         <div>
@@ -197,12 +242,14 @@
 
                 <div class="course-card">
                     <div class="course-card__image">
-                        <img src="/Images/course-card1.png" alt="course image">
+                        <img src="/Icons/flag.png"  id="flag" alt="flag">
+                        <img src="/Images/course-image7.png" alt="course image">
                     </div>
                     <div class="course-card__body">
                         <h2 class="h5">Blender Character Creator v2.0 for Video Games Design</h2>
                         <p class="text-s">By Ralph Edwards</p>
                         <p class="price">$18.99</p>
+                        <hr class="line">
                     </div>
                     <div class="course-card__footer">
                         <div>
@@ -215,7 +262,8 @@
 
                 <div class="course-card">
                     <div class="course-card__image">
-                        <img src="/Images/course-card1.png" alt="course image">
+                        <img src="/Icons/flag.png"  id="flag" alt="flag">
+                        <img src="/Images/course-image8.png" alt="course image">
                     </div>
                     <div class="course-card__body">
                         <h2 class="h5">The Ultimate Guide to 2D Mobile Game Development with Unity</h2>
@@ -224,6 +272,7 @@
                             <p class="price-discount">12.99</p>
                             <p class="price-full" style=text-decoration:line-through;>$44.99</p>
                         </div>
+                        <hr class="line">
                     </div>
                     <div class="course-card__footer">
                         <div>
@@ -236,12 +285,14 @@
 
                 <div class="course-card">
                     <div class="course-card__image">
-                        <img src="/Images/course-card1.png" alt="course image">
+                        <img src="/Icons/flag.png"  id="flag" alt="flag">
+                        <img src="/Images/course-image9.png" alt="course image">
                     </div>
                     <div class="course-card__body">
                         <h2 class="h5">Learn JMETER from Scratch on Live Apps-Performance Testing</h2>
                         <p class="text-s">By Jenny Wilson</p>
                         <p class="price">$14.50</p>
+                        <hr class="line">
                     </div>
                     <div class="course-card__footer">
                         <div>

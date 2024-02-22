@@ -365,9 +365,53 @@ a:hover {
   box-shadow: 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06);
   border-radius: 1rem;
   overflow: hidden;
+  position: relative;
 }
-.course-card__image .flag {
+.course-card__image {
+  height: 250px;
+}
+@media (max-width: 1400px) {
+  .course-card__image {
+    height: 200px;
+  }
+}
+@media (max-width: 1200px) {
+  .course-card__image {
+    height: 180px;
+  }
+}
+@media (max-width: 768px) {
+  .course-card__image {
+    height: 250px;
+  }
+}
+.course-card .course-card__image {
+  position: relative;
+}
+.course-card #flag {
   border-radius: 50%;
+  z-index: 2;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+.course-card .best-seller {
+  position: absolute;
+  padding: 0px 10px;
+  background-color: rgb(57, 193, 57);
+  border-radius: 5px;
+  top: 5%;
+  left: 5%;
+  z-index: 2;
+  -webkit-text-decoration: #fff;
+          text-decoration: #fff;
+  color: #eee5e5;
+  font-size: small;
+}
+.course-card .line {
+  margin-bottom: -15px;
 }
 .course-card__body {
   padding: 1rem;
@@ -390,6 +434,47 @@ a:hover {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+#courses .courses-categories {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+#courses .courses-categories #courses {
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+#courses .courses-categories .categories-search {
+  display: flex;
+  align-items: center;
+}
+#courses .courses-categories .categories-search #categories {
+  height: 40px;
+  width: 200px;
+  padding-left: 10px;
+  border-radius: 5px;
+  color: #7d7878;
+  border-color: #c0b8b8;
+}
+#courses .courses-categories .categories-search .search-container {
+  position: relative;
+  margin-left: 20px;
+}
+#courses .courses-categories .categories-search #search {
+  padding-right: 30px;
+  height: 40px;
+  width: 300px;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid #c0b8b8;
+  outline: none;
+}
+#courses .courses-categories .categories-search .fa-magnifying-glass {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
 #courses .course-card .price {
   color: #6366F1;
   font-weight: 700;
@@ -400,9 +485,11 @@ a:hover {
 #courses .course-card .price-discount {
   color: red;
   font-weight: 700;
+  margin-bottom: 0px;
 }
 #courses .course-card .price-full {
   margin-left: 10px;
+  margin-bottom: 0px;
 }
 #courses .course-card__footer {
   display: flex;
