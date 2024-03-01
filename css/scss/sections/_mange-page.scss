@@ -1,0 +1,66 @@
+#manage-page {
+
+    margin: 40px;
+   
+
+    .container {
+
+        #work {
+            @media (max-width: 768px) {
+                margin-right: 0px;
+            }
+            margin-right: -30px;
+        }
+
+        
+
+        #task-master {
+            @media (max-width: 768px) {
+                display: none;
+            }
+           margin-left: -30px
+        }
+
+        h3 {
+            @include h2;
+            margin-bottom: 20px;
+        }
+
+        #line {
+            display: flex;
+
+
+            #checkmark {
+                width: 15px;
+                margin-right: 10px;
+                margin-top: 5px;
+            }
+        }
+
+        .purple-btn {
+
+            img {
+                margin-bottom: 2px;
+               
+                margin-left: 10px;
+                height: 12px;
+                width: 12px;
+            }
+        }
+
+     
+
+
+      
+    }
+
+
+    
+}
+
+.apps {
+    margin-top: 40px;
+    background-color: #F3F6FF;
+    
+        
+}

@@ -945,3 +945,130 @@ footer .container .social-media {
   margin-top: 20px;
   font-weight: 300;
 }
+
+#light-dark-screen {
+  background-image: linear-gradient(90deg, #0B0F19 50%, white 50%);
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+@media (max-width: 992px) {
+  #light-dark-screen {
+    display: none;
+  }
+}
+#light-dark-screen .light-dark-background {
+  display: block;
+}
+#light-dark-screen .light-dark-background .head {
+  display: flex;
+  justify-content: center;
+}
+#light-dark-screen .light-dark-background .head .white {
+  color: white;
+}
+#light-dark-screen .light-dark-background .head h1 {
+  margin-left: 30px;
+}
+#light-dark-screen .light-dark-background img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  margin-top: 50px;
+}
+
+#manage-page {
+  margin: 40px;
+}
+#manage-page .container #work {
+  margin-right: -30px;
+}
+@media (max-width: 768px) {
+  #manage-page .container #work {
+    margin-right: 0px;
+  }
+}
+#manage-page .container #task-master {
+  margin-left: -30px;
+}
+@media (max-width: 768px) {
+  #manage-page .container #task-master {
+    display: none;
+  }
+}
+#manage-page .container h3 {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  color: #0B0F19;
+  font-size: 32px !important;
+  margin-bottom: 20px;
+}
+#manage-page .container #line {
+  display: flex;
+}
+#manage-page .container #line #checkmark {
+  width: 15px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+#manage-page .container .purple-btn img {
+  margin-bottom: 2px;
+  margin-left: 10px;
+  height: 12px;
+  width: 12px;
+}
+
+.apps {
+  margin-top: 40px;
+  background-color: #F3F6FF;
+}
+
+.email-subscription {
+  margin-top: 100px;
+  padding-top: 100px;
+  background-color: #F3F6FF;
+}
+.email-subscription .container {
+  display: block;
+  width: 50%;
+}
+.email-subscription .container #head {
+  display: flex;
+}
+.email-subscription .container #head img {
+  margin-left: 20px;
+  width: auto;
+}
+.email-subscription .grid {
+  width: 100%;
+  padding: 0px;
+  display: grid;
+  -moz-column-gap: 0px;
+       column-gap: 0px;
+  grid-template-areas: "sign-up daily Advertising week" "sign-up event startup podcast";
+}
+.email-subscription .grid #sign-up {
+  grid-area: sign-up;
+}
+.email-subscription .grid #daily {
+  grid-area: daily;
+}
+.email-subscription .grid #Advertising {
+  grid-area: Advertising;
+}
+.email-subscription .grid #week {
+  grid-area: week;
+}
+.email-subscription .grid #event {
+  grid-area: event;
+}
+.email-subscription .grid #startup {
+  grid-area: startup;
+}
+.email-subscription .grid #podcast {
+  grid-area: podcast;
+}

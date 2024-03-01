@@ -1,0 +1,39 @@
+.email-subscription {
+    margin-top: 100px;
+    padding-top: 100px;
+    background-color: #F3F6FF;
+
+    .container {
+        display: block;
+        width: 50%;
+
+        #head {
+            display: flex;
+
+            img {
+                margin-left: 20px;
+                width: auto;
+            }
+        }
+    }
+
+    .grid {
+        width: 100%;
+        padding: 0px;
+        display: grid;
+        column-gap: 0px;
+        #sign-up { grid-area: sign-up; }
+        #daily { grid-area: daily; }
+        #Advertising { grid-area: Advertising; }
+        #week { grid-area: week; }
+        #event { grid-area: event; }
+        #startup { grid-area: startup; }
+        #podcast { grid-area: podcast; }
+
+        grid-template-areas: "sign-up daily Advertising week"
+                             "sign-up event startup podcast" ;
+
+                             
+
+    }
+}
