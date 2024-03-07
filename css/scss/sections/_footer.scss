@@ -14,4 +14,33 @@ footer {
             margin-bottom: 30px;
         }
     }
+
+  
+}
+
+.footer-icon {
+    .icon {
+        display: flex;
+        margin-top: 100px;
+        margin-bottom: 30px;
+        justify-content: center;
+        img {
+            margin: 20px;
+            height: 44px;
+            width: 44px;
+        }
+    }
+
+    .copyright {
+        display: flex;
+        margin-bottom: 40px;
+        
+        h5 {
+            padding: 0% 10% 0% 10%;
+            text-align: center;
+            color: #c0b8b8;
+            font-weight: 400;
+            @include text-s;
+        }
+    }
 }
