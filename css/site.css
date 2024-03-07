@@ -1240,3 +1240,71 @@ footer .container .social-media {
 .email-subscription .policy a {
   text-decoration: underline;
 }
+
+.sign-in-page .container {
+  width: 30%;
+  margin-top: 120px;
+}
+@media (max-width: 1200px) {
+  .sign-in-page .container {
+    width: 40%;
+  }
+}
+@media (max-width: 800px) {
+  .sign-in-page .container {
+    width: 50%;
+  }
+}
+.sign-in-page .container form input {
+  border: 1px solid #D4D7E5;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.sign-in-page .container .flex {
+  display: flex;
+}
+.sign-in-page .container .flex p {
+  margin-left: 10px;
+}
+.sign-in-page .container .purple-btn {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.sign-in-page .container #forgot-password {
+  display: flex;
+  justify-content: center;
+}
+.sign-in-page .container img {
+  width: auto;
+}
+.sign-in-page .container .social-network {
+  margin-top: 30px;
+}
+.sign-in-page .container .social-network p {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.sign-in-page .container .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.sign-in-page .container .buttons .swag {
+  width: 48%;
+}
+.sign-in-page .container .buttons .swag .btn-gray {
+  width: 100%;
+}
+.sign-in-page .container .buttons .swag .btn-gray p {
+  margin-bottom: 0px;
+}
+.sign-in-page .foot {
+  text-align: center;
+  width: 50%;
+}
+.sign-in-page .foot p {
+  color: #9397AD;
+}
