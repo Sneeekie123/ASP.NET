@@ -1,0 +1,74 @@
+.sign-up-page {
+
+    .container {
+        @media (max-width: 1200px) {
+            width: 40%;
+        }
+
+        @media (max-width: 800px) {
+            width: 50%;
+        }
+
+
+        width: 30%;
+
+       
+        margin-top: 120px;
+
+        
+        form {
+           
+            input {
+                border: 1px solid #D4D7E5;
+                padding: 10px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                width: 100%;
+            }
+        }
+
+        #full-name {
+            display: flex;
+            justify-content: space-between;
+
+            #box {
+                display: block;
+                width: 48%;
+            }
+
+            
+            
+        }
+
+        .flex {
+            display: flex;
+
+            p {
+                margin-left: 10px;
+            }
+        }
+
+        .purple-btn {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        
+            
+        
+    }
+
+    .foot {
+    
+        text-align: center;
+        width: 50%;
+
+       
+        p {
+
+            color: #9397AD;
+        }
+
+    }
+}
