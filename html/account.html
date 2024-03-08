@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="sv-se">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"content="Smipas start sida">
+    <meta name="keywords"content="HTML, CSS,">
+    <meta name="author"content="Simp">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <script defer src="https://kit.fontawesome.com/433736379d.js"crossorigin="anonymous">
+</script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"crossorigin="anonymous">
+    <link rel="stylesheet"href="/css/site.css">
+    <title>
+</title>
+<header>
+    <div class="container">
+        <a href="./Figma.html" id="logo">
+            <img src="/Icons/Silicon-Logotype.svg" alt="Silicon-Logotype">
+        </a>
+
+
+        <div id="menu">
+            <nav>
+                <a class="menu-link" href="#">Overview</a>
+                <a class="menu-link" href="#">Featuers</a>
+                <a class="menu-link" href="#">Courses</a>
+            </nav>
+        </div>
+
+
+        <div class="btn-switch">
+            <span>Light</span>
+            <div class="switch">
+                <input type="checkbox" id="switch" role="switch">
+                <label for="switch" class="slider round"></label>
+            </div>
+            <span>Dark</span>
+        </div>
+        <a href="./account.html">
+            <img src="/Icons/profile-icon.png" id="profile-icon" alt="profile-icon">
+        </a>
+        
+
+        <div class="btn-mobile">
+            <button class="btn" id="mobile-menu-btn" aria-controls="btn-switch"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </div>
+
+    <div  id="mobile-menu"  aria-expanded="false">
+
+        <div class="btn-switch">
+            <span>Light</span>
+            <div class="switch">
+                <input type="checkbox" id="switch" role="switch">
+                <label for="switch" class="slider round"></label>
+            </div>
+            <span>Dark</span>
+        </div>
+
+        <div class="account-buttons">
+            <a href="./sign-in.html">
+                <button class="btn-gray">Sign in</button>
+            </a>
+            <a href="./sign-up.html">
+                <button class="btn-theme">Sign up</button>
+            </a>
+        </div>
+
+        
+        <nav>
+            <a class="menu-link" href="#">Overview</a>
+            <a class="menu-link" href="#">Featuers</a>
+            <a class="menu-link" href="/html/Courses.html">Courses</a>
+        </nav>
+    </div>
+</header>
+<body>
+
+    <section class="account-details">
+        <div class="container">
+            <div class="left-profile">
+                <div class="profile-image">
+                    <div class="block">
+                        <img src="/Icons/profile-icon.png" alt="" id="profile">
+                        <img src="/Icons/bx-refresh.svg" alt="" id="refresh">
+                    </div>
+                    
+                </div>
+
+                <div class="namespace">
+                    <h5>John Doe</h5>
+                    <p>john.doe@domain.com</p>
+                </div>
+                <div>
+                    <button class="purple-btn">
+                        <img src="/Icons/bx-cog.svg" alt="">
+                            Account-details
+                    </button>
+                </div>
+                <div>
+                    <button class="purple-btn">
+                        <img src="/Icons/bx-lock-alt.svg" alt="">
+                        Account-details
+                    </button>
+                </div>
+                <div>
+                    <button class="purple-btn">
+                        <img src="/Icons/bookmark.svg" alt="">
+                        Account-details
+                    </button>
+                </div>
+                <div>
+                    <button class="purple-btn">
+                        <img src="/Icons/bx-log-out.svg" alt="">
+                        Account-details
+                    </button>
+                </div>
+            </div>
+
+            <div class="right-profile"> 
+                <div>
+                    <h1>Account Details</h1>
+                </div>
+                <div>
+                    <h4>Basic info</h4>
+                </div>
+
+                <div class="block-1">
+                    <div class="fill-block">
+                        <h5>First name</h5>
+                    <form action="">
+                        <input type="text" placeholder="John">
+                    </form>
+                    </div>
+                    <div class="fill-block">
+                        <h5>Last name</h5>
+                        <form action="">
+                            <input type="text" placeholder="Doe">
+                        </form>
+                    </div>
+                </div>
+               
+                <div class="block-2">
+                    <div class="fill-block">
+                        <h5>Email address</h5>
+                        <form action="">
+                            <input type="text" placeholder="john.doe@domain.com">
+                        </form>
+                    </div>
+                    <div class="fill-block">
+                        <h5>Phone</h5>
+                        <form action="">
+                            <input type="text" placeholder="Enter your phone">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="block-3">
+                    <div class="block-4">
+                        <h5>Bio</h5>
+                        <p>(optional)</p>
+                    </div>
+                    <form action="">
+                        <input type="text" placeholder="Add a short bio...">
+                    </form>
+                </div>
+
+                <div class="block-5">
+                    <div>
+                        <button class="btn-gray">
+                            Cancel
+                        </button>
+                    </div>
+
+                    <div>
+                        <button class="purple-btn">
+                            Save changes
+                        </button>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

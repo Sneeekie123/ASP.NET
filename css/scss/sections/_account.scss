@@ -1,0 +1,159 @@
+.account-details {
+    margin-top: 40px;
+    
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+
+
+        .left-profile {
+
+            border-right: 1px solid rgba(0, 0, 0, 0.16);
+
+            .profile-image {
+                display: flex;
+                justify-content: center;
+    
+                
+                .block {
+                    position: relative;
+                    #profile {
+                        width: 100px;
+                        border-radius: 50%;
+                    }
+    
+                    #refresh {
+                        position: absolute;
+                        background-color: #ffffff;
+                        padding: 5px;
+                        border-radius: 50%;
+                        width: auto;
+                        height: auto;
+                        right: 0;
+                        bottom: 0;
+                    }
+                }
+            }
+
+            .namespace {
+                margin-top: 10px;
+                display: block;
+                text-align: center;
+            }
+        
+            img {
+    
+                width: auto;
+            }
+    
+    
+            .purple-btn:hover {
+                background-color: #6366F1;
+                border: 1px solid #6366F1;
+                color: #fff;
+            }
+    
+            .purple-btn {
+                margin: 0px;
+                background-color: #fff;
+                border: 1px solid #fff;
+                color: black;
+                width: 100%;
+                text-align: start;
+    
+                img {
+                    margin-right: 10px;
+                    width: 20px;
+                    height: 20px;
+                   
+                    
+                }
+            }
+
+        }
+
+        
+
+
+        .right-profile {
+
+            margin-left: 10%;
+
+            h4 {
+                color: #6366F1;
+            }
+
+            h5 {
+                margin-bottom: 0px;
+            }
+
+            input {
+                    
+                border: 1px solid #D4D7E5;
+                padding: 10px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                width: 100%;
+                
+            }
+
+          
+
+            .block-1 {
+                display: flex;
+                justify-content: space-between;
+               
+                .fill-block {
+                    width: 48%;
+                }
+            }
+
+
+
+            .block-2 {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+               
+                .fill-block {
+                    width: 48%;
+                }
+
+            }
+
+           
+
+            .block-3 {
+                margin-top: 10px;
+                .block-4 {
+                    display: flex ;
+                    justify-content: baseline;
+
+
+                    p {
+                        margin-left: 10px;
+                        margin-top: 4px;
+                        margin-bottom: 0px;
+                        
+                        
+                    }
+                }
+
+                input {
+                    padding-bottom: 80px;
+                }
+            }
+
+            .block-5 {
+                display: flex;
+
+                .purple-btn {
+                    margin-left: 10px;
+                    margin-top: 0px;
+
+                    height: 41px;
+                }
+            }
+        }
+    }
+}

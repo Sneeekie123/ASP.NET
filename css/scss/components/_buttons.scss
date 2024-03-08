@@ -52,13 +52,20 @@
 }
 
 .purple-btn {
+   
+
+    @include button;
+    background: #6366F1;
     color: #ffFfFF;
-    background-color: #6366F1;
-    border: 1px solid #6366F1;
-    border-radius: 7px;
-    height: 50px;
-    width: 160px;
-    margin-top: 40px;
+    border: none;
+
+    &:hover {
+        text-decoration: none;
+        background: $gray-700;
+        color: $white;
+    } 
+
+
 }
 
 .btn-switch {
