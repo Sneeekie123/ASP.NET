@@ -100,8 +100,14 @@
           
 
             .block-1 {
+            
                 display: flex;
                 justify-content: space-between;
+
+                @media (max-width: 545px) {
+                    display: block;
+                    
+                }
                
                 .fill-block {
                     width: 48%;
@@ -114,6 +120,11 @@
                 display: flex;
                 justify-content: space-between;
                 margin-top: 10px;
+
+                @media (max-width: 545px) {
+                    display: block;
+                    
+                }
                
                 .fill-block {
                     width: 48%;
@@ -146,14 +157,50 @@
 
             .block-5 {
                 display: flex;
-
+                border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+                padding-bottom: 50px;
+                margin-top: 10px;
                 .purple-btn {
                     margin-left: 10px;
                     margin-top: 0px;
 
                     height: 41px;
                 }
+
             }
+
+            #border-none {
+                border: none;
+            }
+        }
+    }
+
+    #address {
+        margin-top: 60px;
+    }
+
+    .icon {
+        display: flex;
+        margin-top: 100px;
+        margin-bottom: 30px;
+        justify-content: center;
+        img {
+            margin: 20px;
+            height: 44px;
+            width: 44px;
+        }
+    }
+
+    .copyright {
+        display: flex;
+        margin-bottom: 40px;
+        
+        h5 {
+            padding: 0% 10% 0% 10%;
+            text-align: center;
+            color: #c0b8b8;
+            font-weight: 400;
+            @include text-s;
         }
     }
 }

@@ -1266,6 +1266,11 @@ footer .container .social-media {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 545px) {
+  .account-details .container .right-profile .block-1 {
+    display: block;
+  }
+}
 .account-details .container .right-profile .block-1 .fill-block {
   width: 48%;
 }
@@ -1273,6 +1278,11 @@ footer .container .social-media {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+}
+@media (max-width: 545px) {
+  .account-details .container .right-profile .block-2 {
+    display: block;
+  }
 }
 .account-details .container .right-profile .block-2 .fill-block {
   width: 48%;
@@ -1294,11 +1304,46 @@ footer .container .social-media {
 }
 .account-details .container .right-profile .block-5 {
   display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  padding-bottom: 50px;
+  margin-top: 10px;
 }
 .account-details .container .right-profile .block-5 .purple-btn {
   margin-left: 10px;
   margin-top: 0px;
   height: 41px;
+}
+.account-details .container .right-profile #border-none {
+  border: none;
+}
+.account-details #address {
+  margin-top: 60px;
+}
+.account-details .icon {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+.account-details .icon img {
+  margin: 20px;
+  height: 44px;
+  width: 44px;
+}
+.account-details .copyright {
+  display: flex;
+  margin-bottom: 40px;
+}
+.account-details .copyright h5 {
+  padding: 0% 10% 0% 10%;
+  text-align: center;
+  color: #c0b8b8;
+  font-weight: 400;
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px !important;
 }
 
 #courses .home {
